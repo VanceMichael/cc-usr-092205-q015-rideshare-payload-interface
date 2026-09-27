@@ -1,0 +1,243 @@
+{
+  "mission": "样例任务Y16",
+  "rocket": "力箭一号",
+  "flight_number": 16,
+  "integrator": "总体单位",
+  "payloads": [
+    {
+      "id": "SAT-1",
+      "developer": "研制方甲",
+      "interface": {
+        "name": "样例遥感星一号",
+        "purpose": "对地遥感试验",
+        "mass_kg": 86.5,
+        "cog_mm": [0, 0, 312],
+        "envelope": { "radius_mm": 460, "height_mm": 780 },
+        "separation": { "sequence": 1, "time_s": 540, "direction_deg": 0, "spring_velocity_mps": 0.8 },
+        "power": { "bus_voltage_v": 28, "peak_w": 120 },
+        "telemetry_windows": [
+          { "station": "样例测控站甲", "start_s": 535, "end_s": 565 }
+        ],
+        "no_fly_items": ["分离确认前禁止展开太阳翼"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V3",
+        "component_margin_db": 6.2
+      }
+    },
+    {
+      "id": "SAT-2",
+      "developer": "研制方乙",
+      "interface": {
+        "name": "样例通信星",
+        "purpose": "窄带通信试验",
+        "mass_kg": 74.2,
+        "cog_mm": [0, 0, 285],
+        "envelope": { "radius_mm": 420, "height_mm": 700 },
+        "separation": { "sequence": 2, "time_s": 560, "direction_deg": 120, "spring_velocity_mps": 0.75 },
+        "power": { "bus_voltage_v": 28, "peak_w": 95 },
+        "telemetry_windows": [
+          { "station": "样例测控站乙", "start_s": 555, "end_s": 585 }
+        ],
+        "no_fly_items": ["禁飞频段禁止发射信标"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V1.4",
+        "component_margin_db": 5.8
+      }
+    },
+    {
+      "id": "SAT-3",
+      "developer": "研制方丙",
+      "interface": {
+        "name": "样例科学星",
+        "purpose": "空间科学探测",
+        "mass_kg": 112.8,
+        "cog_mm": [0, 0, 350],
+        "envelope": { "radius_mm": 520, "height_mm": 900 },
+        "separation": { "sequence": 3, "time_s": 580, "direction_deg": 240, "spring_velocity_mps": 0.85 },
+        "power": { "bus_voltage_v": 28, "peak_w": 160 },
+        "telemetry_windows": [
+          { "station": "样例测控站甲", "start_s": 575, "end_s": 605 }
+        ],
+        "no_fly_items": ["分离前禁止接通探测高压"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V2",
+        "component_margin_db": 7.1
+      }
+    },
+    {
+      "id": "SAT-4",
+      "developer": "研制方甲",
+      "interface": {
+        "name": "样例气象星",
+        "purpose": "气象观测试验",
+        "mass_kg": 98.0,
+        "cog_mm": [0, 0, 330],
+        "envelope": { "radius_mm": 500, "height_mm": 860 },
+        "separation": { "sequence": 4, "time_s": 600, "direction_deg": 0, "spring_velocity_mps": 0.8 },
+        "power": { "bus_voltage_v": 28, "peak_w": 140 },
+        "telemetry_windows": [
+          { "station": "样例测控站乙", "start_s": 595, "end_s": 625 }
+        ],
+        "no_fly_items": ["分离确认前禁止解锁扫描机构"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V2.2",
+        "component_margin_db": 6.0
+      }
+    },
+    {
+      "id": "SAT-5",
+      "developer": "研制方丁",
+      "interface": {
+        "name": "样例技术验证星",
+        "purpose": "新技术在轨验证",
+        "mass_kg": 63.4,
+        "cog_mm": [0, 0, 260],
+        "envelope": { "radius_mm": 400, "height_mm": 620 },
+        "separation": { "sequence": 5, "time_s": 620, "direction_deg": 120, "spring_velocity_mps": 0.7 },
+        "power": { "bus_voltage_v": 28, "peak_w": 80 },
+        "telemetry_windows": [
+          { "station": "样例测控站甲", "start_s": 615, "end_s": 645 }
+        ],
+        "no_fly_items": ["星箭分离信号发出前禁止开机"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V0.9",
+        "component_margin_db": 4.5
+      }
+    },
+    {
+      "id": "SAT-6",
+      "developer": "研制方乙",
+      "interface": {
+        "name": "样例物联网星",
+        "purpose": "物联网数据中继",
+        "mass_kg": 71.6,
+        "cog_mm": [0, 0, 275],
+        "envelope": { "radius_mm": 430, "height_mm": 680 },
+        "separation": { "sequence": 6, "time_s": 640, "direction_deg": 240, "spring_velocity_mps": 0.78 },
+        "power": { "bus_voltage_v": 28, "peak_w": 100 },
+        "telemetry_windows": [
+          { "station": "样例测控站乙", "start_s": 635, "end_s": 665 }
+        ],
+        "no_fly_items": ["禁飞频段禁止发射信标"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V1.1",
+        "component_margin_db": 5.5
+      }
+    },
+    {
+      "id": "SAT-7",
+      "developer": "研制方丙",
+      "interface": {
+        "name": "样例教育星",
+        "purpose": "科普教育载荷",
+        "mass_kg": 58.9,
+        "cog_mm": [0, 0, 240],
+        "envelope": { "radius_mm": 380, "height_mm": 600 },
+        "separation": { "sequence": 7, "time_s": 660, "direction_deg": 0, "spring_velocity_mps": 0.72 },
+        "power": { "bus_voltage_v": 28, "peak_w": 70 },
+        "telemetry_windows": [
+          { "station": "样例测控站甲", "start_s": 655, "end_s": 685 }
+        ],
+        "no_fly_items": ["分离确认前禁止展开太阳翼"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V1.0",
+        "component_margin_db": 5.0
+      }
+    },
+    {
+      "id": "SAT-8",
+      "developer": "研制方丁",
+      "interface": {
+        "name": "样例遥感星二号",
+        "purpose": "高光谱遥感试验",
+        "mass_kg": 121.3,
+        "cog_mm": [0, 0, 365],
+        "envelope": { "radius_mm": 540, "height_mm": 940 },
+        "separation": { "sequence": 8, "time_s": 680, "direction_deg": 120, "spring_velocity_mps": 0.9 },
+        "power": { "bus_voltage_v": 28, "peak_w": 175 },
+        "telemetry_windows": [
+          { "station": "样例测控站乙", "start_s": 675, "end_s": 705 }
+        ],
+        "no_fly_items": ["分离确认前禁止解锁遮光罩"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V2.5",
+        "component_margin_db": 6.8
+      }
+    },
+    {
+      "id": "SAT-9",
+      "developer": "研制方甲",
+      "interface": {
+        "name": "样例船舶识别星",
+        "purpose": "船舶自动识别试验",
+        "mass_kg": 66.0,
+        "cog_mm": [0, 0, 250],
+        "envelope": { "radius_mm": 410, "height_mm": 640 },
+        "separation": { "sequence": 9, "time_s": 700, "direction_deg": 240, "spring_velocity_mps": 0.74 },
+        "power": { "bus_voltage_v": 28, "peak_w": 88 },
+        "telemetry_windows": [
+          { "station": "样例测控站甲", "start_s": 695, "end_s": 725 }
+        ],
+        "no_fly_items": ["星箭分离信号发出前禁止开机"]
+      },
+      "internal": {
+        "design_baseline": "内部设计基线V1.7",
+        "component_margin_db": 5.2
+      }
+    }
+  ],
+  "joint_tests": [
+    {
+      "id": "JT-01",
+      "name": "整箭模装联合检查",
+      "payloads": ["SAT-1", "SAT-2", "SAT-3", "SAT-4", "SAT-5", "SAT-6", "SAT-7", "SAT-8", "SAT-9"],
+      "status": "passed"
+    },
+    {
+      "id": "JT-02",
+      "name": "分离时序联合演练",
+      "payloads": ["SAT-2", "SAT-3", "SAT-4"],
+      "status": "passed"
+    },
+    {
+      "id": "JT-03",
+      "name": "遥测链路联合测试",
+      "payloads": ["SAT-6", "SAT-7"],
+      "status": "planned"
+    }
+  ],
+  "sign_offs": [
+    { "party": "总体单位", "scope": "整箭构型", "conclusion": "accepted", "at": "2026-09-20" },
+    { "party": "运载方", "scope": "分离序列", "conclusion": "accepted", "at": "2026-09-21" },
+    {
+      "party": "研制方乙",
+      "scope": "SAT-6 遥测窗口",
+      "conclusion": "conditional",
+      "condition": "发射场联试期间复测遥测链路",
+      "at": "2026-09-24"
+    }
+  ],
+  "icd": {
+    "id": "ICD-Y16",
+    "version": 4,
+    "status": "frozen",
+    "frozen_at": "2026-09-01T00:00:00Z",
+    "waivers": [
+      {
+        "id": "WV-01",
+        "applicable_payloads": ["SAT-6"],
+        "summary": "遥测窗口压缩豁免",
+        "cutoff": "2026-10-10T00:00:00Z",
+        "re_verification": "发射场联试期间复测 SAT-6 遥测链路"
+      }
+    ]
+  }
+}
